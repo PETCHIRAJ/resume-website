@@ -1,0 +1,296 @@
+/* Print Styles for Clean PDF Generation */
+
+@media print {
+    /* Reset and base styles */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+
+    body {
+        font-size: 11pt;
+        line-height: 1.4;
+        color: #000;
+        background: white;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Page setup */
+    @page {
+        margin: 0.5in;
+        size: letter;
+    }
+
+    /* Prevent page breaks inside elements */
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+
+    .job, .project, .education-item {
+        page-break-inside: avoid;
+    }
+
+    ul, ol {
+        page-break-inside: avoid;
+    }
+
+    li {
+        page-break-inside: avoid;
+    }
+
+    /* Header adjustments */
+    header {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #333;
+    }
+
+    h1 {
+        font-size: 24pt;
+        color: #000;
+        margin-bottom: 4pt;
+    }
+
+    .title {
+        font-size: 14pt;
+        color: #333;
+        margin-bottom: 8pt;
+    }
+
+    .contact {
+        font-size: 10pt;
+        color: #333;
+    }
+
+    .contact a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    /* Section headers */
+    h2 {
+        font-size: 14pt;
+        margin-top: 16pt;
+        margin-bottom: 12pt;
+        color: #000;
+        border-bottom: 1.5pt solid #333;
+        padding-bottom: 4pt;
+    }
+
+    h3 {
+        font-size: 11pt;
+        font-weight: 600;
+        margin-bottom: 4pt;
+        color: #000;
+    }
+
+    /* Content adjustments */
+    .summary p {
+        font-size: 10pt;
+        line-height: 1.4;
+        color: #333;
+    }
+
+    /* Experience section */
+    .job {
+        background: none;
+        border-left: 3pt solid #666;
+        padding: 8pt 0 8pt 12pt;
+        margin-bottom: 16pt;
+    }
+
+    .job-header {
+        margin-bottom: 8pt;
+    }
+
+    .company {
+        font-size: 10pt;
+        color: #555;
+    }
+
+    .duration {
+        font-size: 9pt;
+        color: #666;
+    }
+
+    .achievements {
+        font-size: 10pt;
+        color: #333;
+    }
+
+    .achievements li {
+        margin-bottom: 4pt;
+        padding-left: 16pt;
+    }
+
+    .achievements li::before {
+        content: "•";
+        color: #333;
+    }
+
+    /* Skills section */
+    .skill-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12pt;
+    }
+
+    .skill-category {
+        background: none;
+        padding: 8pt;
+        border: 0.5pt solid #ddd;
+    }
+
+    .skill-category h3 {
+        font-size: 10pt;
+        margin-bottom: 6pt;
+    }
+
+    .skill-tags {
+        gap: 4pt;
+    }
+
+    .skill-tag {
+        font-size: 9pt;
+        padding: 2pt 6pt;
+        border: 0.5pt solid #999;
+        background: white;
+        color: #333;
+    }
+
+    .skill-tag.primary {
+        background: #f0f0f0;
+        color: #000;
+        font-weight: 600;
+        border-color: #333;
+    }
+
+    /* Projects section */
+    .project {
+        background: none;
+        border-left: 2pt solid #666;
+        padding: 8pt 0 8pt 12pt;
+        margin-bottom: 12pt;
+    }
+
+    .project h3 {
+        font-size: 11pt;
+        margin-bottom: 4pt;
+    }
+
+    .project-tech {
+        font-size: 9pt;
+        color: #666;
+        margin-bottom: 4pt;
+    }
+
+    .project p {
+        font-size: 10pt;
+        color: #333;
+        line-height: 1.3;
+    }
+
+    /* Education section */
+    .education-item {
+        background: none;
+        padding: 8pt 0;
+        margin-bottom: 12pt;
+    }
+
+    .institution {
+        font-size: 10pt;
+        color: #555;
+    }
+
+    .certifications {
+        font-size: 10pt;
+        margin-top: 6pt;
+    }
+
+    .certifications li {
+        margin-bottom: 3pt;
+        padding-left: 12pt;
+        color: #333;
+    }
+
+    .certifications li::before {
+        content: "•";
+        color: #333;
+    }
+
+    /* Footer - hide print button, show minimal info */
+    footer {
+        margin-top: 20pt;
+        padding-top: 12pt;
+        border-top: 1pt solid #999;
+        font-size: 9pt;
+    }
+
+    .print-btn {
+        display: none;
+    }
+
+    .separator {
+        display: inline;
+        margin: 0 4pt;
+    }
+
+    .footer-links a {
+        color: #666;
+        text-decoration: none;
+    }
+
+    .last-updated {
+        font-size: 8pt;
+        color: #999;
+        margin-top: 4pt;
+    }
+
+    /* Hide animations and hover effects */
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    /* Ensure links are visible */
+    a[href]:after {
+        content: none;
+    }
+
+    /* Specific adjustments for better PDF */
+    .container {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    h1, h2, h3, .title {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+    }
+
+    /* Optimize for single page if possible */
+    .experience {
+        page-break-before: auto;
+    }
+
+    .skills {
+        page-break-before: auto;
+    }
+
+    .projects {
+        page-break-before: auto;
+    }
+
+    .education {
+        page-break-before: auto;
+    }
+}

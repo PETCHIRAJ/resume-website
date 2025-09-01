@@ -303,63 +303,212 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
-        padding: 20px 16px;
+        padding: 30px 20px;
+    }
+
+    header {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.9rem;
+        margin-bottom: 12px;
     }
 
     .title {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
+        line-height: 1.4;
+        margin-bottom: 20px;
     }
 
     .contact {
         font-size: 0.9rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 16px;
     }
 
     .separator {
-        display: none;
+        display: inline;
     }
 
-    .contact {
-        flex-direction: column;
-        gap: 4px;
+    section {
+        margin-bottom: 36px;
+    }
+
+    h2 {
+        font-size: 1.35rem;
+        margin-bottom: 20px;
+    }
+
+    .summary p {
+        font-size: 0.98rem;
+        line-height: 1.7;
+    }
+
+    .job {
+        padding: 20px 16px;
+        margin-bottom: 28px;
     }
 
     .job-header {
         flex-direction: column;
+        gap: 8px;
+    }
+
+    .job h3 {
+        font-size: 1.1rem;
+    }
+
+    .company {
+        font-size: 0.95rem;
     }
 
     .duration {
         margin-top: 4px;
-    }
-
-    .skill-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    h2 {
-        font-size: 1.3rem;
-    }
-
-    .summary p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.75rem;
-    }
-
-    .job {
-        padding: 16px;
+        font-size: 0.9rem;
     }
 
     .achievements li {
         font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    .skill-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .skill-category {
+        padding: 16px;
+    }
+
+    .skill-category h3 {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+    }
+
+    .skill-tags {
+        gap: 6px;
+    }
+
+    .skill-tag {
+        padding: 5px 10px;
+        font-size: 0.82rem;
+    }
+
+    .project {
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+
+    .project h3 {
+        font-size: 1.05rem;
+    }
+
+    .project-tech {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+
+    .project p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .education-item {
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+
+    .education-item h3 {
+        font-size: 1.05rem;
+    }
+
+    .institution {
+        font-size: 0.95rem;
+    }
+
+    .certifications li {
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+    }
+
+    footer {
+        margin-top: 40px;
+        padding-top: 20px;
+    }
+
+    .footer-links {
+        font-size: 0.9rem;
+    }
+
+    .footer-links .separator {
+        margin: 0 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 24px 16px;
+    }
+
+    h1 {
+        font-size: 1.65rem;
+        letter-spacing: -0.3px;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .contact {
+        font-size: 0.85rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        display: block;
+        width: 100%;
+    }
+
+    .job {
+        padding: 16px 14px;
+    }
+
+    .achievements {
+        padding-left: 0;
+    }
+
+    .achievements li {
+        padding-left: 20px;
+        font-size: 0.92rem;
+    }
+
+    .skill-tag {
+        padding: 4px 8px;
+        font-size: 0.8rem;
+    }
+
+    .project {
+        padding: 14px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .footer-links .separator {
+        display: none;
+    }
+
+    .footer-links a {
+        padding: 4px 8px;
     }
 }
 

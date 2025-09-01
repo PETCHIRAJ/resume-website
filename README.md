@@ -5,9 +5,9 @@ Professional resume website for Petchiraj Manoharan, hosted at resume.venba.dev
 ## Features
 - Clean, modern design
 - Mobile responsive
-- Print-friendly CSS for PDF generation
 - Fast loading with no JavaScript dependencies
 - ATS-friendly semantic HTML
+- Professional portfolio showcase
 
 ## Local Development
 ```bash

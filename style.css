@@ -295,10 +295,6 @@ footer {
     color: var(--accent-color);
 }
 
-.print-btn {
-    font-weight: 500;
-}
-
 .last-updated {
     color: var(--text-light);
     font-size: 0.875rem;

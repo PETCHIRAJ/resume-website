@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://resume.venba.dev/sitemap.xml

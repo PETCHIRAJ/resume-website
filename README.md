@@ -21,4 +21,5 @@ python3 -m http.server 8000
 Hosted on GitHub Pages with custom domain resume.venba.dev
 
 ## License
-© 2025 Petchiraj Manoharan. All rights reserved.
+© 2025 Petchiraj Manoharan. All rights reserved.# Forcing rebuild Thu  9 Oct 2025 23:04:33 +08
+# Manually trigger deployment

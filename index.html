@@ -52,6 +52,29 @@
         "description": "Frontend Team Lead with 12+ years of software engineering expertise"
     }
     </script>
+
+    <!-- Firebase Analytics -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-analytics.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "YOUR_FIREBASE_API_KEY",
+            authDomain: "venba-apps.firebaseapp.com",
+            databaseURL: "https://venba-apps-default-rtdb.firebaseio.com",
+            projectId: "venba-apps",
+            storageBucket: "venba-apps.firebasestorage.app",
+            messagingSenderId: "663923344955",
+            appId: "1:663923344955:web:01df422e8e580450dd3e1e",
+            measurementId: "G-5MWG54RJ20"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 </head>
 <body>
     <div class="container">
